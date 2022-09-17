@@ -1,0 +1,224 @@
+/* @media (max-width: 1440px) {} */
+/* @media (max-width: 1366px) {} */
+/* @media (max-width: 1320px) {} */
+/* @media (max-width: 1290px) {} */
+@media (max-width: 1140px) {
+    .service__cards {
+        flex-direction: column;
+        justify-content: unset;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__content .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__desc {
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .header__desc-video {
+        flex-shrink: 0;
+    }
+
+    .work__first .container {
+        flex-direction: column-reverse;
+        justify-content: unset;
+        text-align: center;
+        row-gap: 40px;
+    }
+
+    .work__second .container {
+        flex-direction: column;
+        justify-content: unset;
+        text-align: center;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team__cards {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .team__card {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 850px) {
+    .news__form {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .news__btn {
+        position: unset;
+    }
+
+    .news__input {
+        max-width: 700px;
+        width: 100%;
+        padding: 25px 45px;
+    }
+
+    .header__list {
+        position: fixed;
+        z-index: 998;
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        left: 0;
+        background: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 60px;
+        transition: 500ms;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__list.active {
+        top: 0;
+    }
+
+    .header__menu {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 999;
+        order: 1;
+    }
+
+    .header__menu-line {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: 400ms;
+        z-index: 999;
+        position: relative;
+    }
+
+    .header__menu-line::before,
+    .header__menu-line::after {
+        content: '';
+        position: absolute;
+        top: -7px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        transition: 400ms;
+    }
+
+    .header__menu-line::after {
+        top: 7px;
+    }
+
+    .header__menu-line.active {
+        background: transparent;
+    }
+
+    .header__menu-line.active::before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .header__menu-line.active::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .header__link::after,
+    .header__link::before {
+        display: none;
+    }
+}
+
+/* @media (max-width: 768px) {} */
+/* @media (max-width: 736px) {} */
+/* @media (max-width: 734px) {} */
+/* @media (max-width: 684px) {} */
+/* @media (max-width: 667px) {} */
+@media (max-width: 576px) {
+    ::-webkit-input-placeholder {
+        font-size: 15px;
+    }
+    .header__desc-title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 414px) {
+    .header__desc-title {
+        font-size: 40px;
+    }
+
+    .txt {
+        font-size: 14px;
+    }
+
+    .work__title {
+        font-size: 30px;
+    }
+
+    .work__txt {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+/* @media (max-width: 412px) {} */
+@media (max-width: 375px) {
+    .header__desc-title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 360px) {
+    .txt {
+        font-size: 11px;
+    }
+}
+@media (max-width: 320px) {
+    .header__desc-title {
+        font-size: 30px;
+    }
+
+    .header__desc-btn {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    .news__txt {
+        font-size: 11px;
+    }
+
+    .news__input {
+        padding: 20px 40px;
+    }
+}
